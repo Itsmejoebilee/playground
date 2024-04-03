@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Step Form</title>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    
+    <div class="main">
+
+        <div class="container">
+
+            <h1>Sign Up Form</h1>
+
+            <div class="progress-container">
+
+                <hr class="progress-bar-back" />
+                <hr class="progress-bar-front" />
+
+                <div class="step checked" data-step="1">
+                    <i class="fas fa-1"></i>
+                </div>
+                <div class="step" data-step="2">
+                    <i class="fas fa-2"></i>
+                </div>
+                <div class="step" data-step="3">
+                    <i class="fas fa-3"></i>
+                </div>
+                <div class="step" data-step="4">
+                    <i class="fas fa-4"></i>
+                </div>
+                <div class="step" data-step="5">
+                    <i class="fas fa-5"></i>
+                </div>
+
+            </div>
+
+            <div class="form-container">
+
+                <div class="form" id="form-1">
+                    <h3>Name:</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="firstName">First Name:</label>
+                            <input type="text" class="form-control" id="firstName">
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Last Name:</label>
+                            <input type="text" class="form-control" id="lastName">
+                        </div>
+                    </form>
+                </div>
+
+                <div class="form" id="form-2">
+                    <h3>Contact:</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="phoneNumber">Phone Number:</label>
+                            <input type="number" class="form-control" id="phoneNumber">
+                        </div>
+                        <div class="form-group">
+                            <label for="emailAdd">Email Address:</label>
+                            <input type="email" class="form-control" id="emailAdd">
+                        </div>
+                    </form>
+                </div>
+
+                <div class="form" id="form-3">
+                    <h3>Address:</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="country">Country:</label>
+                            <input type="text" class="form-control" id="country">
+                        </div>
+                        <div class="form-group">
+                            <label for="zipCode">Zip Code:</label>
+                            <input type="number" class="form-control" id="zipCode">
+                        </div>
+                    </form>
+                </div>
+
+                <div class="form" id="form-4">
+                    <h3>Birth:</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="dateBirth">Date of Birth:</label>
+                            <input type="date" class="form-control" id="dateBirth">
+                        </div>
+                        <div class="form-group">
+                            <label for="placeBirth">Place of Birth:</label>
+                            <input type="text" class="form-control" id="placeBirth">
+                        </div>
+                    </form>
+                </div>
+
+                <div class="form" id="form-5">
+                    <h3>Account:</h3>
+                    <form>
+                        <div class="form-group">
+                            <label for="username">Username:</label>
+                            <input type="text" class="form-control" id="username">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Password:</label>
+                            <input type="number" class="form-control" id="password">
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+
+
+            <div class="button-container">
+
+                <button class="btn" id="prev">Back</button>
+                <button class="btn" id="next">Next</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Script JS -->
+    <script src="./script.js"></script>
+</body>
+</html>
